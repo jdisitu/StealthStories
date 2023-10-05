@@ -1,0 +1,159 @@
+.topbar {
+  background-color: #131227;
+  width: 100%;
+  display: flex; /* Use flexbox layout */
+  align-items: center; /* Center vertically */
+  height: 60px; /* Set a fixed height for the parent container */
+  position: fixed;
+  justify-content: space-between;
+}
+
+#navigation {
+  float: right;
+  width: 232px;
+  text-align: right;
+}
+
+/* Style the navigation menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  font-family: Helvetica, Arial, sans-serif;
+  padding-right: 20px;
+}
+
+/* Styling each individual list element */
+nav li {
+  display: inline;
+  margin-left: 30px;
+}
+
+li:hover i {
+  color: #ffffff; /* Change icon color on hover */
+}
+
+/* Styling the links inside the list elements */
+nav a {
+  text-decoration: none;
+  color: #aaa6e5;
+  font-weight: bold;
+}
+
+#logo {
+  float: left;
+  padding-right: 60px;
+  padding-left: 12px;
+}
+
+#logoimg {
+  width: 160px;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.IndividualPostBlock {
+  background-color: #212034;
+  width: 100%;
+  display: flex; /* Use flexbox layout */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  margin-top: 20px;
+}
+
+.IndividualPost {
+  background-color: #393751;
+  width: 600px;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.postTitle {
+  font-family: Helvetica, Arial, sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+.userNameOnPost {
+  font-family: Helvetica, Arial, sans-serif;
+  color: #686687;
+  font-size: 10px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+.post-content {
+  font-family: Helvetica, Arial, sans-serif;
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+#searchBar {
+  display: flex; /* Use flexbox to align divs horizontally */
+  justify-content: center; /* Center the divs horizontally within their containers */
+}
+
+input[type='search'] {
+  width: 640px; /* Set the width of the input field */
+  height: 40px; /* Set the height of the input field */
+  padding: 10px; /* Add padding inside the input field */
+  border: 1px solid #68669d; /* Add a border */
+  border-radius: 5px; /* Add rounded corners */
+  font-size: 14px; /* Set the font size */
+  font-family: Helvetica, Arial, sans-serif;
+  color: #68669d; /* Set the text color */
+  background-color: #393751; /* Set the background color */
+}
+
+/* Style the input field when it's focused (clicked or selected) */
+input[type='search']:focus {
+  outline: none; /* Remove the default focus outline (customize as needed) */
+  border-color: #68669d; /* Change the border color on focus */
+  box-shadow: 0 0 5px #ffffff; /* Add a box shadow on focus */
+}
+
+.like-button {
+  background-color: transparent;
+  border: none; /* Optional: Remove button border for a cleaner look */
+  padding: 0;
+}
+
+.like:hover{
+  background-color: #cfbbe1;
+}
+
+.button-text {
+  display: inline-block;
+  margin-left: 8px; /* Add space between the image and text */
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.like {
+  display: flex; /* Use flexbox to horizontally align items */
+  align-items: center;
+}
+
+/* Style the main content area */
+main {
+  padding-top: 80px;
+  background-color: #212034;
+}
+
+/* Style the footer */
+footer {
+  background-color: #131227;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+}
+
+body {
+    margin: 0;
+}
