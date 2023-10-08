@@ -1,9 +1,10 @@
 <!--  -->
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>StealthStories</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DiscoverFeed</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <link
       rel="stylesheet"
@@ -22,7 +23,7 @@
         <nav>
           <ul>
             <li>
-              <a href="#"><i class="fa-solid fa-list"></i></a>
+              <a href="#"><i class="fa-solid fa-box-archive"></i></a>
             </li>
             <li>
               <a href="#"><i class="fa-solid fa-bell"></i></a>
@@ -35,6 +36,53 @@
       </div>
     </header>
     <main>
+    <div class="IndividualPostBlock">
+      <div class="feedNav">
+        <div id="discoverFeedNav">
+          <div class="iconAndText">
+            <a href="#" class="iconLinDiscoverkNav"><i class="fa-regular fa-compass"></i></a>
+          <p class="navTextDiscover">Discover</p>
+          </div>
+        </div>
+        <div id="tendingFeedNav">
+          <div class="iconAndText">
+            <a href="#" class="iconLink"><i class="fa-solid fa-fire-flame-curved"></i></a>
+          <p class="navTextTrending">Trending</p>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <div class="IndividualPostBlock">
+      <div class="NewPost">
+        <div class="Alias">
+          <form action="#" method="post">
+            <label for="name" id="aliasLabel"> Current alias </label>
+            <input type="text" id="alias" name="alias" required>
+          </form>
+        </div>
+        <div>
+          <textarea id="postContent" placeholder="Share a story..."></textarea>
+        </div>
+        <div class="actionBarOnPost">
+          <div class="iconAndText">
+            <a href="#" class="iconLink"><i class="fa-regular fa-image"></i></a>
+          <p class="iconText">Add image</p>
+          </div>
+          <div class="iconAndText">
+            <a href="#" class="iconLink"><i class="fa-regular fa-file"></i></a>
+            <p class="iconText">Add file</p>
+          </div>
+          <div class="iconAndText">
+            <a href="#" class="iconLink"><i class="fa-solid fa-rainbow"></i></a>
+            <p class="iconText">Add mood</p>
+          </div>
+          <div class="iconAndText" id="post">
+            <a href="#" class="iconLink"><i class="fa-regular fa-paper-plane"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
       <div class="IndividualPostBlock">
         <div class="IndividualPost">
           <div class="profile-picture"></div>
@@ -51,16 +99,19 @@
             we were about to leave, I quickly climbed up on a table of took the
             clock under my jacket and left.
           </p>
-          <div class="like">
-            <button class="like-button">
-              <img
-                src="coffee-03.png"
-                alt="Button Image"
-                height="20"
-                width="20"
-              />
-            </button>
-            <span class="button-text">Like this post</span>
+          <div class="actionBarOnPost">
+            <div class="iconAndText">
+              <a href="#" class="iconLink"><i class="fa-solid fa-mug-hot"></i></a>
+            <p class="iconText">Siiip</p>
+            </div>
+            <div class="iconAndText">
+              <a href="#" class="iconLink"><i class="fa-regular fa-comment"></i></a>
+              <p class="iconText">Comment</p>
+            </div>
+            <div class="iconAndText">
+              <a href="#" class="iconLink"><i class="fa-regular fa-bell"></i></a>
+              <p class="iconText">Follow</p>
+            </div>
           </div>
         </div>
       </div>
@@ -80,16 +131,19 @@
             we were about to leave, I quickly climbed up on a table of took the
             clock under my jacket and left.
           </p>
-          <div class="like">
-            <button class="like-button">
-              <img
-                src="coffee-03.png"
-                alt="Button Image"
-                height="20"
-                width="20"
-              />
-            </button>
-            <span class="button-text">Like this post</span>
+          <div class="actionBarOnPost">
+            <div class="iconAndText">
+              <a href="#" class="iconLink"><i class="fa-solid fa-mug-hot"></i></a>
+            <p class="iconText">Siiip</p>
+            </div>
+            <div class="iconAndText">
+              <a href="#" class="iconLink"><i class="fa-regular fa-comment"></i></a>
+              <p class="iconText">Comment</p>
+            </div>
+            <div class="iconAndText">
+              <a href="#" class="iconLink"><i class="fa-regular fa-bell"></i></a>
+              <p class="iconText">Follow</p>
+            </div>
           </div>
         </div>
       </div>
@@ -109,16 +163,19 @@
             we were about to leave, I quickly climbed up on a table of took the
             clock under my jacket and left.
           </p>
-          <div class="like">
-            <button class="like-button">
-              <img
-                src="coffee-03.png"
-                alt="Button Image"
-                height="20"
-                width="20"
-              />
-            </button>
-            <span class="button-text">Like this post</span>
+          <div class="actionBarOnPost">
+            <div class="iconAndText">
+              <a href="#" class="iconLink"><i class="fa-solid fa-mug-hot"></i></a>
+            <p class="iconText">Siiip</p>
+            </div>
+            <div class="iconAndText">
+              <a href="#" class="iconLink"><i class="fa-regular fa-comment"></i></a>
+              <p class="iconText">Comment</p>
+            </div>
+            <div class="iconAndText">
+              <a href="#" class="iconLink"><i class="fa-regular fa-bell"></i></a>
+              <p class="iconText">Follow</p>
+            </div>
           </div>
         </div>
       </div>

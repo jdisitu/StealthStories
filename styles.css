@@ -1,13 +1,68 @@
+/* ------------------------------------------------------- */
+/* -------------------- BODY AND MAIN -------------------- */
+body {
+  margin: 0;
+}
+
+main {
+  padding-top: 60px;
+  background-color: #212034;
+  padding-bottom: 20px;
+}
+
+/* ------------------------------------------------------- */
+/* -------------------- TOPBAR HEADER -------------------- */
 .topbar {
   background-color: #131227;
   width: 100%;
-  display: flex; /* Use flexbox layout */
+  display: flex;
   align-items: center; /* Center vertically */
-  height: 60px; /* Set a fixed height for the parent container */
+  height: 60px;
   position: fixed;
   justify-content: space-between;
+  border-bottom: 1px sold #68669D;
 }
 
+/* --- LOGO --- */
+#logo {
+  float: left;
+  padding-right: 60px;
+  padding-left: 12px;
+}
+
+#logoimg {
+  width: 160px;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* --- SEARCHBAR --- */
+#searchBar {
+  display: flex; /* Use flexbox to align divs horizontally */
+  justify-content: center; /* Center the divs horizontally within their containers */
+}
+
+input[type="search"] {
+  width: 640px; 
+  height: 40px; 
+  padding: 10px; 
+  border: 1px solid #68669d; 
+  border-radius: 5px; /* Rounded corners */
+  font-size: 14px; 
+  font-family: Helvetica, Arial, sans-serif;
+  color: #68669d; 
+  background-color: #393751;
+}
+
+/* Style the input field when it's focused (clicked or selected) */
+input[type="search"]:focus {
+  outline: none; 
+  border-color: #68669d; 
+  box-shadow: 0 0 5px #ffffff; 
+}
+
+/* --- NAVIGATION --- */
 #navigation {
   float: right;
   width: 232px;
@@ -29,35 +84,162 @@ nav li {
 }
 
 li:hover i {
-  color: #ffffff; /* Change icon color on hover */
+  color: #50F9AB; /* Change icon color on hover */
 }
 
-/* Styling the links inside the list elements */
+/* Styling the icons inside the list elements */
 nav a {
   text-decoration: none;
   color: #aaa6e5;
   font-weight: bold;
 }
 
-#logo {
-  float: left;
-  padding-right: 60px;
-  padding-left: 12px;
+/* --------------------------------------------------------- */
+/* -------------------- FEED NAVIGATION -------------------- */
+
+.feedNav{
+  width: 640px;
+  height: 40px;
+  display: flex;
+  justify-content: center; 
 }
 
-#logoimg {
-  width: 160px;
-  height: auto;
-  max-width: 100%;
-  max-height: 100%;
+#discoverFeedNav{
+  width: 320px;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  border-bottom: 2px solid #50F9AB;
 }
 
+#tendingFeedNav{
+  width: 320px;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  border-bottom: 2px solid #AAA6E5;
+}
+
+.navTextDiscover{
+  color:#50F9AB;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  padding-left: 8px;
+  font-weight: bold;
+}
+
+.navTextTrending{
+  color:#AAA6E5;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  padding-left: 8px;
+  font-weight: bold;
+}
+
+.iconLinDiscoverkNav{
+  color:#50F9AB
+}
+
+p{
+  padding: 0;
+}
+
+#post{
+  padding-left: 263px;
+}
+
+
+/* -------------------------------------------------------- */
+/* -------------------- NEW POST BLOCK -------------------- */
+.NewPost {
+  background-color: #393751;
+  width: 600px;
+  border-radius: 10px;
+  padding: 20px;
+  border: 1px solid #68669D;
+}
+
+/* --- CURRENT ALIAS INPUT FORM --- */
+#alias {
+  width: 120px;
+  padding: 3px;
+  margin-bottom: 20px;
+  border: 1px solid #68669D;
+  border-radius: 5px;
+  color: #FAFAFC;
+  background-color: #4B4A67;
+  font-size: 14px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+#aliasLabel{
+  color: #FAFAFC;
+  font-size: 14px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+#alias:focus {
+  outline: none; 
+  border-color: #68669d; 
+}
+
+/* --- POST CONTENT INPUT FORM --- */
+#postContent{
+  width: 580px;
+  height: 50px;
+  padding: 3px;
+  color: #FAFAFC;
+  font-size: 14px; 
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: transparent;
+  border: none; 
+  resize: none;
+}
+
+#postContent::placeholder,
+textarea::placeholder {
+    color: #68669D;
+}
+
+#postContent:focus {
+  outline: none;  
+}
+
+/* --- ACTION BAR ON NEW POST --- */
+.actionBarOnPost{
+  display: flex;
+}
+
+.iconAndText{
+  display: flex;
+}
+
+.iconText{
+  padding-left: 8px;
+  padding-right: 30px;
+  color: white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.iconLink{
+  color:#aaa6e5;
+}
+
+p{
+  margin: 0;
+}
+
+/* --------------------------------------------------------------- */
+/* -------------------- INDIVIDUAL POST BLOCK -------------------- */
 .IndividualPostBlock {
   background-color: #212034;
   width: 100%;
-  display: flex; /* Use flexbox layout */
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
   margin-top: 20px;
 }
 
@@ -66,6 +248,7 @@ nav a {
   width: 600px;
   border-radius: 10px;
   padding: 20px;
+  border: 1px solid #68669D;
 }
 
 .postTitle {
@@ -89,62 +272,12 @@ nav a {
   color: #ffffff;
   font-size: 12px;
   line-height: 1.5;
+  padding-bottom: 12px;
 }
 
-#searchBar {
-  display: flex; /* Use flexbox to align divs horizontally */
-  justify-content: center; /* Center the divs horizontally within their containers */
-}
 
-input[type='search'] {
-  width: 640px; /* Set the width of the input field */
-  height: 40px; /* Set the height of the input field */
-  padding: 10px; /* Add padding inside the input field */
-  border: 1px solid #68669d; /* Add a border */
-  border-radius: 5px; /* Add rounded corners */
-  font-size: 14px; /* Set the font size */
-  font-family: Helvetica, Arial, sans-serif;
-  color: #68669d; /* Set the text color */
-  background-color: #393751; /* Set the background color */
-}
-
-/* Style the input field when it's focused (clicked or selected) */
-input[type='search']:focus {
-  outline: none; /* Remove the default focus outline (customize as needed) */
-  border-color: #68669d; /* Change the border color on focus */
-  box-shadow: 0 0 5px #ffffff; /* Add a box shadow on focus */
-}
-
-.like-button {
-  background-color: transparent;
-  border: none; /* Optional: Remove button border for a cleaner look */
-  padding: 0;
-}
-
-.like:hover{
-  background-color: #cfbbe1;
-}
-
-.button-text {
-  display: inline-block;
-  margin-left: 8px; /* Add space between the image and text */
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  color: #ffffff;
-}
-
-.like {
-  display: flex; /* Use flexbox to horizontally align items */
-  align-items: center;
-}
-
-/* Style the main content area */
-main {
-  padding-top: 80px;
-  background-color: #212034;
-}
-
-/* Style the footer */
+/* ------------------------------------------------ */
+/* -------------------- FOOTER -------------------- */
 footer {
   background-color: #131227;
   color: #fff;
@@ -152,8 +285,8 @@ footer {
   padding: 10px;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 12px;
-}
-
-body {
-    margin: 0;
+  height: 40px;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
 }
